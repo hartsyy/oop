@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Michigan Senior | Application Form</title>
+		
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	</head>
+	<body>
+		<!-- MAIN NAVBAR -->
+		<header>
+			<div class="logo">
+				<img src="./Images/logo.jpg" alt="School Logo">
+				<p style="color: #8c1248; font-style: italic; font-weight: bold; font-size: 30px;">Michigan Senior</p>
+			</div>
+			<nav>
+				<ul class="navbar-a">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Academics</a></li>
+					<li><a href="#">Admissions</a></li>
+					<li><a href="#">Students</a></li>
+					<li><a href="#" class="active">Staff</a></li>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Blog</a></li>
+				</ul>
+			</nav>
+		</header>
+	<!-- LOGIN SECTION -->
+		<div class="login-page">
+
+		<!-- LEFT -->
+		 	<div class="login-left">
+				<h1>Staff Portal</h1>
+				<p>
+					Secure access for administrators and staff members of Michigan Senior High School.
+					Manage student applications, admissions, and academic resources efficiently.
+				</p>
+			</div>
+		<!-- RIGHT -->
+		 	<div class="login-right">
+				<div class="login-box">
+					<h2>Login to Dashboard</h2>
+					<form action="dashboard.html" >
+						<div class="input-group">
+							<i class="fa fa-envelope"></i>
+							<input type="email" name="email" placeholder="Staff Email" required>
+						</div>
+						<div class="input-group">
+							<i class="fa fa-lock"></i>
+							<input type="password" name="password" placeholder="Password" required>
+						</div>
+						<button class="login-btn">Login</button>
+					</form>
+					<div class="login-extra">
+						<p>
+							<a href="#">Forgot Password?</a>
+							
+							<a href="signup.html">Create Account</a>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

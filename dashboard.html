@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michigan Senior | Dashboard</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="sidebar-logo">
+            <img src="./Images/logo.jpg" alt="School Logo">
+            <h2>Michigan Senior</h2>
+        </div>
+
+        <ul>
+            <li class="active"><i class="fa fa-home"></i> Dashboard</li>
+            <li><i class="fa fa-user-graduate"></i> Students</li>
+            <li><i class="fa fa-file-alt"></i> Applications</li>
+            <li><i class="fa fa-book"></i> Academics</li>
+            <li><i class="fa fa-users"></i> Staff</li>
+            <li><i class="fa fa-calendar"></i> Events</li>
+            <li><i class="fa fa-cog"></i> Settings</li>
+            <li class="logout-item">
+                <i class="fa fa-sign-out-alt"></i>
+                <a href="login.html"> Logout</a>
+            </li>
+        </ul>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Topbar -->
+        <header class="topbar">
+            <div class="search-box">
+                <i class="fa fa-search"></i>
+                <input type="text" placeholder="Search students, records...">
+            </div>
+
+            <div class="topbar-right">
+                <i class="fa fa-bell notification"></i>
+
+                <div class="profile">
+                    <img src="./Images/avatar.png" alt="Profile">
+                    <span>Welcome, Admin</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-text">
+                <h1>Welcome Back 👋</h1>
+                <p>
+                    Manage admissions, monitor student activities, track academic performance,
+                    and stay updated with the latest school events.
+                </p>
+                <button>Explore Dashboard</button>
+            </div>
+
+            <div class="hero-image">
+                <img src="./Images/school-banner.png" alt="School">
+            </div>
+        </section>
+
+        <!-- Stats -->
+        <section class="stats-section">
+            <div class="card">
+                <i class="fa fa-user-graduate"></i>
+                <h3>1,245</h3>
+                <p>Total Students</p>
+            </div>
+
+            <div class="card">
+                <i class="fa fa-file-signature"></i>
+                <h3>312</h3>
+                <p>Applications</p>
+            </div>
+
+            <div class="card">
+                <i class="fa fa-chalkboard-teacher"></i>
+                <h3>67</h3>
+                <p>Staff Members</p>
+            </div>
+
+            <div class="card">
+                <i class="fa fa-book-open"></i>
+                <h3>23</h3>
+                <p>Courses Active</p>
+            </div>
+        </section>
+
+        <!-- Content Grid -->
+        <section class="dashboard-grid">
+
+            <!-- Recent Activity -->
+            <div class="activity-box">
+                <h2>Recent Activities</h2>
+
+                <div class="activity-item">
+                    <i class="fa fa-user-plus"></i>
+                    <p>New student application submitted</p>
+                </div>
+
+                <div class="activity-item">
+                    <i class="fa fa-check-circle"></i>
+                    <p>Admission approved for Grade 11</p>
+                </div>
+
+                <div class="activity-item">
+                    <i class="fa fa-book"></i>
+                    <p>Academic records updated</p>
+                </div>
+
+                <div class="activity-item">
+                    <i class="fa fa-calendar-check"></i>
+                    <p>Sports event scheduled for Friday</p>
+                </div>
+            </div>
+
+            <!-- Upcoming Events -->
+            <div class="events-box">
+                <h2>Upcoming Events</h2>
+
+                <div class="event">
+                    <h4>Parent Meeting</h4>
+                    <p>July 10, 2026</p>
+                </div>
+
+                <div class="event">
+                    <h4>Science Fair</h4>
+                    <p>July 18, 2026</p>
+                </div>
+
+                <div class="event">
+                    <h4>Annual Sports Day</h4>
+                    <p>July 25, 2026</p>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
