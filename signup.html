@@ -50,7 +50,7 @@
             <div class="signup-box">
                 <h2>Register</h2>
 
-                <form action="login.html">
+                <form id="signupForm" action="login.html">
 
                     <div class="input-group">
                         <i class="fa fa-user"></i>
@@ -71,11 +71,13 @@
                         <i class="fa fa-lock"></i>
                         <input type="password" name="password" id="password" placeholder="Password" required>
                     </div>
+                    <small id="passwordError" class="error-message"></small>
 
                     <div class="input-group">
                         <i class="fa fa-lock"></i>
                         <input type="password" name="confirm_password" id="confirmPassword" placeholder="Confirm Password" required>
                     </div>
+                    <small id="confirmPasswordError" class="error-message"></small>
 
                     <button type="submit" class="login-btn">Sign Up</button>
                 </form>

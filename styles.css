@@ -1450,3 +1450,13 @@ height:250px;
         grid-template-columns: 1fr;
     }
 }
+
+.error-message {
+    display: block;
+    color: red;
+    font-size: 14px;
+    margin-top: -12px;
+    margin-bottom: 15px;
+    padding-left: 8px;
+    min-height: 18px; /* Keeps layout from jumping */
+}

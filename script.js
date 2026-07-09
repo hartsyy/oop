@@ -1,39 +1,113 @@
-/* signup form validation */
+/* ==========================
+   SIGNUP VALIDATION
+========================== */
 
-document.getElementById("signupForm").addEventListener("submit", function(e) {
-    const password = document.getElementById("password").value;
-    const confirmPassword = document.getElementById("confirmPassword").value;
+const signupForm = document.getElementById("signupForm");
 
-    if (password !== confirmPassword) {
-        e.preventDefault();
-        alert("Passwords do not match!");
-    }
+if (signupForm) {
 
-    if (password.length < 6) {
-        e.preventDefault();
-        alert("Password must be at least 6 characters long!");
-    }
-});
+    signupForm.addEventListener("submit", function(e){
 
-/* dashboard navigation toggle */
+        const password = document.getElementById("password").value;
+        const confirmPassword = document.getElementById("confirmPassword").value;
+
+        const passwordError = document.getElementById("passwordError");
+        const confirmPasswordError = document.getElementById("confirmPasswordError");
+
+        // Clear previous errors
+        passwordError.textContent = "";
+        confirmPasswordError.textContent = "";
+
+        let valid = true;
+
+        if(password.length < 6){
+            passwordError.textContent = "Password must be at least 6 characters.";
+            valid = false;
+        }
+
+        if(password !== confirmPassword){
+            confirmPasswordError.textContent = "Passwords do not match.";
+            valid = false;
+        }
+
+        if(!valid){
+            e.preventDefault();
+        }
+
+    });
+
+}
 
 
-// Notification click
-document.querySelector(".notification").addEventListener("click", function () {
-    alert("You have 4 new notifications.");
-});
+/* ==========================
+   LOGIN VALIDATION
+========================== */
 
-// Dashboard button
-document.querySelector(".hero button").addEventListener("click", function () {
-    alert("Welcome to Michigan Senior Dashboard!");
-});
+const password = loginForm.querySelector('input[type="password"]').value;
 
-// Sidebar active effect
+if(loginForm){
+
+    loginForm.addEventListener("submit", function(e){
+
+        const password = document.getElementById("loginPassword").value;
+        const loginPasswordError = document.getElementById("loginPasswordError");
+
+        loginPasswordError.textContent = "";
+
+        if(password.length < 6){
+
+            e.preventDefault();
+            loginPasswordError.textContent = "Password must be at least 6 characters.";
+
+        }
+
+    });
+
+}
+
+
+/* ==========================
+   DASHBOARD
+========================== */
+
+const notification = document.querySelector(".notification");
+
+if(notification){
+
+    notification.addEventListener("click", function(){
+
+        alert("You have 4 new notifications.");
+
+    });
+
+}
+
+const heroButton = document.querySelector(".hero button");
+
+if(heroButton){
+
+    heroButton.addEventListener("click", function(){
+
+        alert("Welcome to Michigan Senior Dashboard!");
+
+    });
+
+}
+
 const menuItems = document.querySelectorAll(".sidebar ul li");
 
-menuItems.forEach(item => {
-    item.addEventListener("click", function () {
-        menuItems.forEach(i => i.classList.remove("active"));
-        this.classList.add("active");
+if(menuItems.length > 0){
+
+    menuItems.forEach(item => {
+
+        item.addEventListener("click", function(){
+
+            menuItems.forEach(i => i.classList.remove("active"));
+
+            this.classList.add("active");
+
+        });
+
     });
-});
+
+}
