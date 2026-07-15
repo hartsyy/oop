@@ -102,25 +102,6 @@ padding:20px 50px;
 overflow:hidden;
 }
 
-.slider{
-width:100%;
-height:100%;
-position:relative;
-}
-
-.slides img{
-
-width:100%;
-height:500px;
-object-fit:cover;
-
-display:none;
-}
-
-.slides img.active{
-display:block;
-}
-
 
 /* arrows */
 
